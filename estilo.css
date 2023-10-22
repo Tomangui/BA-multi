@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "main main aside"
+    "footer footer footer";
+    background-color: rgb(8, 150, 150) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif 
+}
+header{
+    grid-area: header;
+    text-align: center;
+ background-color: rgb(3, 117, 146);
+}
+nav{
+    word-spacing: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4) ;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: burlywood;
+    transition:font-size 0.5s ease ;
+}
+a:hover{
+    font-size: 30px;
+}
+
+main{
+    grid-area: main;
+    text-align: left;
+}
+main ul li{
+    line-height: 100px;
+    text-align: left;
+    font-size: 30px;
+    text-decoration: underline none ;
+    transition: text-decoration 0.5s ease, font-size 0.7s ease;
+}
+li:hover{
+    text-decoration: underline ;
+    font-size: 35px;
+}
+aside{
+    grid-area: aside;
+}
+aside h1{
+text-align: right;
+font-size: 40px;
+text-shadow: 1px 1px 2px rgb(222, 184, 135);
+}
+.carru{
+    width: 300px;
+    float: right ;
+}
+.logoAfa{
+    width: 10%;
+}
+.nombrePag{
+    color: burlywood;
+}
+footer{
+    grid-area: footer;
+}
+.redes{
+    width: 300px;
+}
+.redesC{
+    background-color: burlywood;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:600px) {
+   a{
+    font-size: 16px;
+   }
+    main h1{
+    font-size: 20px; 
+    }
+    main ul li {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    aside h1{
+        font-size: 20px;
+    }
+    .carru{
+        width: 200px;
+    }
+}
