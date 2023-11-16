@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+}
+/*Estructuracion del body*/
+body{
+    display: grid;
+    grid-template-areas:
+     "header header header"
+     "main main aside"
+     "main main aside"
+     "footer fotter fotter";
+     background-color:rgb(8, 150, 150);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+header{
+    grid-area: header;
+    background-color:rgb(3, 117, 146) ;
+    width: 100%;
+}
+header h1{
+    text-align: center;
+    text-decoration: solid underline; 
+}
+main{
+    grid-area: main;
+    font-size: 20px;
+    width: 100%;
+}
+main h1{
+    text-decoration: underline solid;
+}
+/*estructuracion del aside*/
+aside{
+    grid-area: aside;
+    text-align: right;
+    margin: 2%;
+    text-decoration: solid ;
+    width: 100%;
+}
+aside h1{
+ text-decoration: underline;
+}
+.primera{
+    text-align: center;
+}
+/*Estilizacion y animacion de las imagenes del header*/
+.Boca{
+    width: 17%;
+    transition: width 0.5s ease;
+}
+.Boca:hover{
+    width: 20%;
+}
+.River{
+    width: 13%;
+    transition: width 0.5s ease;
+}
+.River:hover{
+    width: 15%;
+}
+.Estudiantes{
+    width: 13%;
+    transition: width 0.5s ease;
+}
+.Estudiantes:hover{
+    width:15% ;
+}
+.Gimnasia{
+    width: 10%;
+    transition: width 0.5s ease;
+}
+.Gimnasia:hover{
+    width: 13%;
+}
+.Independiente{
+    width: 17%;
+    transition: width 0.5s ease;
+}
+.Independiente:hover{
+    width: 20%;
+}
+.Racing{
+    width: 15%;
+    transition: width 0.5s ease;
+}
+.Racing:hover{
+    width: 17%;
+}
+.Rosario{
+    width: 13%;
+    transition: width 0.5s ease;
+}
+.Rosario:hover{
+    width: 15%;
+}
+.Newells{
+    width: 17%;
+    transition: width 0.5s ease;
+}
+.Newells:hover{
+    width: 20%;
+}
+.Sanlorenzo{
+    width: 12%;
+    transition: width 0.5s ease;
+}
+.Sanlorenzo:hover{
+    width: 15%;
+}
+.Velez{
+    width: 10%;
+    transition: width 0.5s ease;
+}
+.Velez:hover{
+    width: 13%;
+}
+ @media screen and (max-width:500px) {
+    header{
+        width: 80%;
+    }
+    main{
+        width:50%;
+        font-size:small
+    }
+    h1{
+        font-size: small;
+    }
+    aside{
+        width:50%;
+        float: left;
+        margin-left: 0;
+    }
+    aside img{
+        width: 200%;
+        float: right;
+        height: auto;
+    }
+ }

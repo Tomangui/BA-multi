@@ -1,0 +1,124 @@
+
+/*Margen general de la pag */*{
+    margin: 0;
+}
+/*Estructuracion general del body */
+body{
+    display: grid;
+    grid-template-areas:
+     "header header header"
+     "main main main"
+     "main main main";
+    background-color:rgb(8, 150, 150);
+    font-family: Verdana, Geneva, Tahoma, sans-serif 
+}
+/*estilizacion del header */
+header{
+    grid-area: header;
+    background-color:rgb(3, 117, 146);
+    width: 100%;
+}
+/*aca hice la estilizacion de las imagenes del header y les agregue algunas animaciones */
+.campeones{
+    margin: 10px;
+    word-spacing: 80px;
+    width: 100%;
+}
+.campeones-2022{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) ;
+    width: 25%;
+    transition: width 0.5s ease;
+}
+.campeones-2022:hover{
+    width: 30%;
+    cursor: alias;
+}
+.campeones-86{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) ;
+    width: 25%;
+    transition: width 0.5s ease;
+}
+.campeones-86:hover{
+    width: 30%;
+    cursor: alias ;
+}
+.campeones-78{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) ;
+    width: 25%;
+    transition: width 0.5s ease;
+}
+.campeones-78:hover{
+    width: 30%;
+    cursor: alias;
+}
+/*estruturacion general del main */
+main{
+grid-area: main;
+width: 100%;
+}
+main div img{
+float: right;
+}
+/*Aca hice toda la estilizacion del main y le agregue animaciones y algo de js*/
+.Alumni_afa{
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) ;
+width: 15%;
+transition: width 0.5s ease;
+margin: 5px;
+}
+.Alumni_afa:hover{
+ width: 20%;
+ cursor: alias;   
+}
+main div section img{
+    float: right;
+}
+.h2{
+    text-decoration: underline solid;
+}
+.Boca{
+    float: right;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) ;
+    width: 20%;
+    transition: width 0.5s ease;
+    margin: 5px;
+}
+.Boca:hover{
+    width: 25%;
+    cursor: alias;
+}
+.River{
+    float: left;
+    width: 20%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) ;
+    transition: width 0.5s ease;
+    margin: 5px;
+}
+.River:hover{
+    width: 25%;
+    cursor: alias;
+}
+ @media screen and (max-width:500px) {
+    .campeones{
+        width: 80%;
+        word-spacing: normal;
+    }
+    main{
+        width: 80%;
+    }
+    .Alumni_afa{
+        width: 30%;
+        float: right;
+        margin: 0;
+    }
+    .Boca{
+        width: 40%;
+        float: right;
+        margin: 0;
+    }
+    .River{
+        width: 40%;
+        float: left;
+        margin: 0;
+    }
+}

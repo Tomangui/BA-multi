@@ -1,0 +1,98 @@
+:root{
+  --colorTextos: #49454567
+}
+/*agregandoles especificaciones genrales para que no se cambien*/
+*,
+::before,
+::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+/*estructura body*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(3, 117, 146) ;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+/*lo uso como fondo*/
+form{
+    background:#fff ;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+.form{
+    width: 100%;
+    margin:auto;
+}
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+/*estilizacion con css y un poco de js*/
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    outline: none;
+    color: rgb(94, 91, 93);
+}
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    pointer-events: none;
+    transition: 0.5s ease-in;
+}
+/*uso las conexiones padre e hijo para poder darle movimiento y que se queden si es valido*/
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+}
+/*agrego estas notas para el usuario*/
+.warnings{
+    width: 200px;
+    text-align: center;
+    color: burlywood;
+    padding-top: 20px;
+}
+/*estilizacion del btn*/
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: burlywood;
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: black;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media screen and (max-width:500px) {
+    form{
+       width: 80%;
+    }
+}
+
+

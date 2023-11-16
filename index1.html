@@ -11,17 +11,22 @@
    
     <header>
     <nav>
+      <!--Nav con las diferentes pestañas de la pag-->
         <a href="index1.html">INICIO</a>
-        <a href="">HISTORIA</a>
-        <a href="">INSTITUCIONES</a>
-        <a href="">ESTADISTICAS</a>
+        <a href="historia.html">HISTORIA</a>
+        <a href="instituciones.html">INSTITUCIONES</a>
+        <!--Form para poder ir al registro de la pag-->
+        <form action="Login.html">
+          <input type="submit" value="Login" />
+        </form>
+      
     </nav>
     <img src="img/images-fotor-bg-remover-20231005191550.png" class="logoAfa" alt="logo-Afa">
     </header>
 
 <main>
+  <!--Info sobre que nos vamos a encontrar en las proximas pestañas-->
         <h1>Bienvenidos a <span class="nombrePag">Fulbo Estadisticas</span></h1><br>
-
         <ul>
            <li>Estadistica historicas</li>
            <li>Historia de nuestro equipos</li>
@@ -35,6 +40,7 @@
 <div id="texto-Derecha" class="textoDerecha">
 <h1>Tabla historica <br>del futbol argentino</h1>
 </div>
+<!--Carrusel agreagdo con boostrap-->
 <div id="carouselExample" class="carousel slide carru">
     <div class="carousel-inner">
       <div class="carousel-item active Carrusel">
@@ -55,6 +61,7 @@
   </div>
 </aside>
 <footer>
+  <!--acordeon con las redes sociales, para agregar un poco mas de info a la pestaña principal, tambien lo agregue con boostrap-->
     <div class="accordion redes" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -94,6 +101,7 @@
         </div>
       </div>
 </footer>
+<script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

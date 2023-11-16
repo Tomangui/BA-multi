@@ -1,6 +1,8 @@
+/*Margen general de la pag */
 *{
     margin: 0;
 }
+/*Estructuracion general del body */
 body{
     display: grid;
     grid-template-areas:
@@ -11,15 +13,28 @@ body{
     background-color: rgb(8, 150, 150) ;
     font-family: Verdana, Geneva, Tahoma, sans-serif 
 }
+/*estilizacion del header */
 header{
     grid-area: header;
     text-align: center;
  background-color: rgb(3, 117, 146);
 }
+/*estilizacion del nav */
 nav{
     word-spacing: 50px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4) ;
 }
+/*esto lo hice para que la anterior linea del nav no me interfiera en todo lo demas */
+header nav form{
+    word-spacing: normal;
+    text-align: right;
+}
+/*estilo del btn para el login */
+input{
+    background-color: burlywood;
+    border-radius: 5px;
+}
+/*estilo y animaciones de las pestañas */
 a{
     text-decoration: none;
     font-size: 25px;
@@ -29,11 +44,12 @@ a{
 a:hover{
     font-size: 30px;
 }
-
+/*estruturacion general del main */
 main{
     grid-area: main;
     text-align: left;
 }
+/*decoracion del main */
 main ul li{
     line-height: 100px;
     text-align: left;
@@ -41,28 +57,34 @@ main ul li{
     text-decoration: underline none ;
     transition: text-decoration 0.5s ease, font-size 0.7s ease;
 }
+/*animacion del li */
 li:hover{
     text-decoration: underline ;
     font-size: 35px;
 }
+/*estructuracion del aside */
 aside{
     grid-area: aside;
 }
+/*estilizacion del aside */
 aside h1{
 text-align: right;
 font-size: 40px;
 text-shadow: 1px 1px 2px rgb(222, 184, 135);
 }
+/*aca quise mover el carrucel y casi me las mando, pero creo que quedo bien */
 .carru{
     width: 300px;
     float: right ;
 }
+/*acomode la imagen, por su tamaño */
 .logoAfa{
     width: 10%;
 }
 .nombrePag{
     color: burlywood;
 }
+/*estructurazion general del footer */
 footer{
     grid-area: footer;
 }
@@ -73,7 +95,7 @@ footer{
     background-color: burlywood;
     text-decoration: underline;
 }
-
+/*media queries para el responsive */
 @media screen and (max-width:600px) {
    a{
     font-size: 16px;
